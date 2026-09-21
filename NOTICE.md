@@ -9,10 +9,11 @@ Brain circuit files for the free educational block-coding extension "Fly Electro
 
 ## Changes made
 
-- Neurons were selected from the whole-brain model: every neuron that fired, or came within 2 mV of threshold, in a wide sweep of stimulus conditions.
-- Connections that leave the selected set were removed (a "closed" circuit pack). The pack therefore differs from the whole-brain model; the measured agreement is published in `v783/index-1.json` under `validation`.
+- Neurons were selected from the whole-brain model: every neuron that fired, or came within 2 mV of threshold, in a wide sweep of stimulus conditions (packs: fly, reflex).
+- Connections that leave the selected set were removed (a "closed" circuit pack). A pack therefore differs from the whole-brain model; the measured agreement on held-out conditions is published in `v783/index-2.json` under `packs.<name>.validation`.
+- For the pack(s) fly, sweep runs in which the whole-brain model entered global ignition (thousands of neurons recruited at once) were left out when choosing the neurons; those packs do not reproduce that state. The excluded runs are listed under `validation.ignitionExcluded`.
 - The data was converted to a compact binary format (FBZ1).
-- The mapping from student-facing inputs (0-100) to stimulation rates, and from neuron firing to action strength, was designed by people.
+- The mapping from student-facing inputs (0-100) to stimulation rates, and from neuron firing to action strength, was designed by people. Visual inputs are injected at an intermediate stage of the visual system (visual projection neurons), not at photoreceptors.
 
 ## Non-commercial
 

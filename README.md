@@ -6,8 +6,10 @@ Brain circuit files fetched at run time by the free educational block-coding ext
 | 파일 | 내용 |
 |---|---|
 | `manifest.json` | 색인 파일의 위치와 sha256 |
-| `v783/index-1.json` | 회로 묶음 목록, 모델 상수, 입력·출력·집단 정의, 전체 뇌 모델과의 일치 검증 결과 |
+| `v783/index-1.json` | (1판 - 옛 편집기용으로 남겨 둔다) 회로 묶음 목록, 모델 상수, 입력·출력·집단 정의, 전체 뇌 모델과의 일치 검증 결과 |
 | `v783/pack-reflex-1.fbz` | 기본 반사 회로 묶음(먹이 반응 · 쓴맛 억제 · 더듬이 닦기). 형식 FBZ1(gzip) |
+| `v783/index-2.json` | 색인 2판 - 1판의 내용 전부 + 「움직이는 초파리」 묶음(눈·다가오는 물체 입력, 돌기·걷기·도망 출력). `manifest.json` 이 지금 가리키는 색인 |
+| `v783/pack-fly-1.fbz` | 움직이는 초파리 회로 묶음(보기 · 걷기 · 먹기 · 닦기 · 도망). 뉴런 6,442개 |
 
 ## 출처와 라이선스 (Source and license)
 
